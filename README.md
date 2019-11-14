@@ -22,3 +22,7 @@ make deploy # transpile typescript into gs and upload it
 # Now you can set some timer or something to fire each function with GUI.
 ```
 
+## how to develop
+
+It's really hard to debug the scraping part on Slack channel.
+So I strongly recommend that you make sure to debug with curl.
