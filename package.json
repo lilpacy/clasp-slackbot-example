@@ -1,0 +1,30 @@
+{
+  "name": "clasp-linebot-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "watch": "npx webpack -w",
+    "deploy": "npm run build && clasp push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/google-apps-script": "0.0.62",
+    "babel-loader": "^8.0.6",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^1.7.0",
+    "es3ify-webpack-plugin": "^0.1.0",
+    "gas-webpack-plugin": "^1.0.2",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  }
+}

@@ -1,0 +1,5 @@
+WEB_HOOK_URL=webhookのurl
+USER_NAME=英語を使うか、日本語を使うならクォートとかで囲う
+ICON_URL=xxxxx.jpgとか
+DEV_CHANNEL=#dev_example_channel
+PROD_CHANNEL=#prod_example_channel
