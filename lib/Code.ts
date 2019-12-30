@@ -108,3 +108,32 @@ export function doGet() {
 export function doPost() {
   messagePush();
 }
+
+// --- Debug
+
+var prodUrl =
+  "https://hooks.slack.com/services/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";
+var devUrl =
+  "https://hooks.slack.com/services/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";
+var username = "NewsPicks"; // 通知時に表示されるユーザー名
+var icon_url =
+  "https://toshioakaneya.com/wp-content/uploads/2018/08/246x0w.jpg"; // 通知時に表示されるアイコン
+var prodChannel = "#times_lilpacy";
+var devChannel = "#times_lilpacy_dev";
+
+function pushToSlack(string) {
+  var jsonData = {
+    username: username,
+    icon_url: icon_url,
+    text: string,
+    channel: devChannel
+  };
+  var payload = JSON.stringify(jsonData);
+
+  var options = {
+    method: "post",
+    contentType: "application/json",
+    payload: payload
+  };
+  UrlFetchApp.fetch(devUrl, options);
+}
